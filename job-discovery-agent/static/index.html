@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Discovery Agent</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Job Discovery Agent</h1>
+    <p>AML · Compliance · Financial Crime · Fintech</p>
+  </header>
+
+  <main>
+    <section class="toolbar">
+      <button id="searchButton">Search jobs</button>
+      <span id="status"></span>
+    </section>
+
+    <section id="jobs" class="jobs-grid">
+      Click "Search jobs" to load opportunities.
+    </section>
+  </main>
+
+  <template id="job-template">
+    <article class="job-card">
+      <div class="job-top">
+        <span class="score"></span>
+        <span class="source"></span>
+      </div>
+      <h2 class="title"></h2>
+      <h3 class="company"></h3>
+      <p class="meta location"></p>
+      <p class="meta country"></p>
+      <p class="description"></p>
+      <a class="link" target="_blank" rel="noopener noreferrer">View job</a>
+    </article>
+  </template>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
