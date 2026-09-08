@@ -1,0 +1,91 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+}
+
+header {
+  padding: 48px 24px;
+  text-align: center;
+  background: #111827;
+  color: white;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+}
+
+.job-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.score {
+  font-weight: bold;
+}
+
+.source {
+  font-size: 13px;
+  opacity: .7;
+}
+
+.job-card h2 {
+  margin-bottom: 6px;
+}
+
+.job-card h3 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.description {
+  line-height: 1.5;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
